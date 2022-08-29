@@ -1,0 +1,156 @@
+﻿h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*Section*/
+
+.section {
+    padding: 0 0 14px 0;
+    background: white;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+/*Container*/
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background: transparent;
+}
+
+.company {
+    width: 100%;
+    margin: 140px 0 50px;
+}
+
+
+/*---------OPLATA--------*/
+
+.opscroll {
+    display: block;
+    margin: 32px 0;
+    width: 100%;
+}
+
+.acc-header {
+    font-size: 28px;
+    color: #000000;
+    margin: 0;
+    font-family: 'robotoregular';
+}
+
+.accordion {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 1px 0px inset;
+}
+
+    .active, .accordion:hover {
+        background-color: #fff4c6;
+    }
+
+    .accordion:after {
+        content: '\002B';
+        color: black;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        font-size:18px;
+    }
+
+.active:after {
+    content: "\2212";
+}
+
+.acc {
+    text-align:center;
+}
+
+.acc-title {
+    font-size: 22px;
+    color: #000000;
+    margin: 0;
+}
+
+.acc-suptitle {
+    font-size: 16px;
+    color: #949494;
+    margin: 0;
+}
+
+.oplimg {
+    width:60px;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+    .panel p {
+        font-size: 16px;
+        margin: 0 0 20px 0;
+    }
+
+
+/*--------------------------------Media----------------------------------*/
+
+@media screen and (max-width: 1280px) {
+    .company {
+        margin: 170px 0 50px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .company {
+        margin: 110px 0 50px;
+    }
+
+    .acc-title {
+        font-size: 20px;
+    }
+
+    .acc-suptitle {
+        font-size: 14px;
+    }
+
+    .panel p {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .acc-title {
+        font-size: 16px;
+    }
+    
+    .accordion {
+        font-size: 14px;
+    }
+
+    .panel p {
+        font-size: 12px;
+    }
+}

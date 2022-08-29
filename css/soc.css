@@ -1,0 +1,247 @@
+﻿.soc {
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
+    cursor: pointer;
+    z-index:2;
+}
+
+.soc:hover {
+    -webkit-animation: none;
+    animation: none;
+}
+
+    .soc:hover .soc-buttons {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .soc:hover .soc-buttons__link {
+        transform: scaleY(1) scaleX(1) translateY(-16px) translateX(0px);
+    }
+
+.pulse:hover + .soc-buttons .soc-buttons__link:before {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: right center 0;
+    transition-delay: 0.3s;
+}
+
+.pulse {
+    position: absolute;
+    bottom: 0;
+    font-size: 36px;
+    color: white;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #7dc500;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgb(34 139 34 / 50%);
+    animation: pulse 2s infinite;
+}
+
+.pulse:hover {
+	animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgb(125 197 0 / 80%);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 52px rgba(204,169,44, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgb(125 197 0 / 80%);
+        box-shadow: 0 0 0 0 rgb(125 197 0 / 80%);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 52px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 52px rgba(204,169,44, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+
+.sh {
+    width: 35px;
+    padding: 13px 0 0 10px;
+}
+
+.soc-buttons {
+    position: absolute;
+    left: 8px;
+    right: 0;
+    bottom: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s;
+}
+
+
+.soc-buttons__item {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.soc-buttons__link {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px black;
+    transform: scaleY(0.5) scaleX(0.5) translateY(0px) translateX(0px);
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+.whtp {
+    background-color: limegreen !important;
+}
+
+[data-tooltip]:before {
+    top: 50%;
+    margin-top: -18px;
+    border-radius: 20px;
+    background:white;
+    color: black;
+    box-shadow: 0 2px 6px rgb(36, 36, 36);
+    content: attr(data-tooltip);
+    font-size: 18px;
+    font-family: 'robotobold';
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    padding: 4px 7px;
+    margin-right: 12px;
+    position: absolute;
+    transform: scale(0);
+    right: 100%;
+    white-space: nowrap;
+    transform-origin: top right;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+[data-tooltip]:hover:before {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: right center 0;
+}
+
+.bot {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size:18px;
+    margin:-10px;
+}
+
+#bot {
+    display: none;
+}
+
+/*--------Mobile-----------*/
+
+@media screen and (max-width: 768px) {
+    .soc {
+        right: 12%;
+        bottom: 2%;
+    }
+    .pulse {
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    .pulse i {
+        padding: 7px;
+    }
+    .soc-buttons {
+        left: 5px;
+        bottom: 35px;
+    }
+    .soc-buttons__link {
+        width: 35px;
+        height: 35px;
+    }
+    .soc-buttons__link i {
+       font-size: 24px;
+    }
+    .sh {
+        width: 28px;
+        padding: 9px 0 0 6px;
+    }
+    .fc {
+        width: 15px;
+    }
+    .vk {
+        width: 24px;
+    }
+    .ph {
+        width: 24px;
+    }
+    .en {
+        width: 25px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .soc {
+        right: 16%;
+        bottom: 2%;
+    }
+
+    .soc-buttons {
+        left: 5px;
+        bottom: 30px;
+    }
+    .soc-buttons__link {
+        width: 35px;
+        height: 35px;
+    }
+    .soc-buttons__link i {
+       font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pulse {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+        .pulse i {
+            padding: 10px;
+        }
+    .soc-buttons__link {
+        width: 30px;
+        height: 30px;
+    }
+        .soc-buttons__link i {
+            font-size: 22px;
+        }
+        .sh {
+        width: 28px;
+    }
+}

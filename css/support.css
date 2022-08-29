@@ -1,0 +1,101 @@
+﻿h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/*Section*/
+
+.section {
+    padding: 0 0 14px 0;
+    background: white;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+}
+
+/*Container*/
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background: transparent;
+}
+
+.spdoc {
+    width: 100%;
+    margin: 150px 0 50px;
+}
+
+.dc__container {
+    width: 100%;
+    max-width: 1200px;
+    background: transparent;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf__title {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0 50px;
+}
+
+.pdf__text {
+    font-size: 20px;
+    padding: 5px;
+    color: #159900;
+    background-color: #e8e8e8;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.pdf__text:hover {
+    color: #ff4700;
+    background-color: #2d2d2d;
+}
+
+/*------------------------------*/
+
+/*----------------Media--------------*/
+
+@media screen and (max-width: 1280px) {
+    .spdoc {
+        margin: 170px 0 50px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .spdoc {
+        margin: 110px 0 50px;
+    }
+
+    .pdf__title {
+        font-size: 28px;
+    }
+
+    .pdf__text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pdf__title {
+        font-size: 20px;
+    }
+
+    .pdf__text {
+        font-size: 18px;
+    }
+}

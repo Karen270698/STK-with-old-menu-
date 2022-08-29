@@ -1,0 +1,208 @@
+﻿html,body {
+    position: relative;
+}
+
+.section__tel {
+    margin: auto;
+    padding: 185px 0 0;
+}
+
+.section__tel img {
+    width: 100%;
+}
+
+
+
+.int__header {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    margin: 0;
+    font-family: 'robotobold';
+}
+
+
+.container__tel {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px 0;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container__ik {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.telefon {
+    text-align: center;
+}
+
+.ik {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.img__ik {
+    width: 60px !important;
+    height: 60px;
+}
+
+.ik__text {
+    width: 210px;
+    text-align: center;
+    font-family: 'robotoregular';
+}
+
+.tel__tab {
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.tel__tab tbody {
+    height: 210px;
+    font-size: 16px;
+}
+
+.tel__hed {
+    color: white;
+    height: 32px;
+    font-size: 18px;
+}
+
+.first {
+    background: #367dc5;
+}
+
+.second {
+    background: #a10606;
+}
+
+tbody th {
+    background: #e4e4e4;
+}
+
+/*---*/
+.tel__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 32px;
+}
+
+.tel__button a {
+    color: rgb(199, 18, 18);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 16px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(199, 18, 18);
+    border-image: initial;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.tel__button a:hover {
+    color: white;
+    background-color: rgb(199, 18, 18);
+}
+
+/*---------Media------------*/
+@media screen and (max-width:1024px) {
+    .container__tel {
+        padding: 20px 0;
+    }
+
+    .telefon {
+        padding: 40px 0;
+        border-bottom: 1px solid black;
+    }
+
+    .ik {
+        width: 225px;
+    }
+
+    .img__ik {
+        width: 50px !important;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section__tel {
+        padding: 100px 10px 20px;
+    }
+
+    .int__header {
+        font-size: 32px;
+    }
+
+    .int__title {
+        font-size: 20px;
+    }
+
+    .container__ik {
+        padding: 15px 0 0;
+    }
+
+    .ik {
+        width: 200px;
+    }
+
+    .img__ik {
+        width: 40px !important;
+        height: 40px;
+    }
+
+    .ik__text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .section__tel {
+        padding: 70px 10px 20px;
+    }
+
+    .int__header {
+        margin: 50px 0 -15px 0;
+    }
+
+    .int__title {
+        font-size: 16px;
+    }
+
+    .img__ik {
+        width: 30px !important;
+        height: 30px;
+    }
+
+    .ik__text {
+        font-size: 10px;
+    }
+
+    .tel__hed {
+        font-size: 12px;
+    }
+
+    .tel__tab tbody {
+        font-size: 12px;
+    }
+
+    .tel__button a {
+        font-size: 14px;
+        padding: 3px 12px;
+    }
+}
